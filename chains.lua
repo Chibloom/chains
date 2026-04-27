@@ -21,7 +21,7 @@
 
 addon.name    = 'chains';
 addon.author  = 'Sippius - Original Ashita-v3 skillchains by Ivaar';
-addon.version = '0.8';
+addon.version = '0.8.2';
 addon.desc    = 'Display current skillchain options.';
 
 require('common');

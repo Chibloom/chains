@@ -235,6 +235,8 @@ skills[3] = { -- Weaponskills
     [226] = {en='Requiescat',skillchain={'Gravitation','Scission'},aeonic='Darkness',weapon='Sequence'},
     [227] = {en='Knights of Rotund',skillchain={'Light'}},
     [228] = {en='Final Paradise',skillchain={'Light'}},
+    [229] = {en='Fast Blade II',skillchain={'Fusion'}},     --bonanza, Onion Sword III
+    [230] = {en='Dragon Blow',skillchain={'Distortion'}},   --bonanza, Dragon Fangs
     [231] = {en='Maru Kala',skillchain={'Detonation','Compression','Distortion'}},
     [232] = {en='Ruthless Stroke',skillchain={'Liquefaction','Impaction','Fragmentation'}},
     [233] = {en='Imperator',skillchain={'Detonation','Compression','Distortion'}},
@@ -242,6 +244,9 @@ skills[3] = { -- Weaponskills
     [235] = {en='Oshala',skillchain={'Induration','Reverberation','Fusion'}},	
     [238] = {en='Uriel Blade',skillchain={'Light','Fragmentation'}},
     [239] = {en='Glory Slash',skillchain={'Light','Fusion'}},
+
+    [3202] = {en='Uriel Blade',skillchain={'Light','Fragmentation'}},       --trust: Valaineral, improper but idk
+    [3537] = {en='Quietus Sphere',skillchain={'Darkness','Gravitation'}},   --trust: Robel-Akbel, improper but idk
 };
 
 skills[4] = { -- BLU/SCH Spells
@@ -431,17 +436,17 @@ skills[11] = { -- NPC TP skills
     [1854] = {en='Stellar Burst',skillchain={'Darkness','Gravitation'}},
     [1914] = {en='Great Wheel',skillchain={'Fragmentation','Scission'}},
     [1936] = {en='Shibaraku',skillchain={'Darkness','Gravitation'}},
-    [1940] = {en='Chimera Ripper',skillchain={'Induration','Detonation'}},
-    [1941] = {en='String Clipper',skillchain={'Scission','Impaction'}},
-    [1942] = {en='Arcuballista',skillchain={'Liquefaction','Transfixion'}},
-    [1943] = {en='Slapstick',skillchain={'Reverberation','Impaction'}},
+    [1940] = {en='Chimera Ripper',skillchain={'Induration','Detonation'}},                      --PUP: Valoredge, to do
+    [1941] = {en='String Clipper',skillchain={'Scission','Impaction'}},                         --PUP: Valoredge, to do
+    [1942] = {en='Arcuballista',skillchain={'Liquefaction','Transfixion'},delay=5},             --PUP: Sharpshot, should be fine now: pup
+    [1943] = {en='Slapstick',skillchain={'Reverberation','Impaction'}},                         --PUP: Harlequin Stormwaker, to do
     [1982] = {en='Nullifying Dropkick',skillchain={'Induration','Detonation','Impaction'}},
     [1983] = {en='Auroral Uppercut',skillchain={'Light','Fragmentation'}},
     [1998] = {en='Hane Fubuki',skillchain={'Transfixion'}},
     [2001] = {en='Happobarai',skillchain={'Reverberation','Impaction'}},
-    [2065] = {en='Cannibal Blade',skillchain={'Compression','Reverberation'}},
-    [2066] = {en='Daze',skillchain={'Transfixion'}},
-    [2067] = {en='Knockout',skillchain={'Scission','Detonation'}},
+    [2065] = {en='Cannibal Blade',skillchain={'Compression','Reverberation'}},                  --PUP: Valoredge, to do
+    [2066] = {en='Daze',skillchain={'Transfixion'},delay=5},                                    --PUP: Sharpshot, testing
+    [2067] = {en='Knockout',skillchain={'Scission','Detonation'}},                              --PUP: Harlequin Stormwaker, to do
     [2088] = {en='Victory Beacon',skillchain={'Light','Distortion'}},
     [2089] = {en='Salamander Flame',skillchain={'Light','Fusion'}},
     [2090] = {en='Typhonic Arrow',skillchain={'Light','Fragmentation'}},
@@ -458,9 +463,9 @@ skills[11] = { -- NPC TP skills
     [2274] = {en='Spine Chiller',skillchain={'Distortion','Detonation'}},
     [2278] = {en='Glory Slash',skillchain={'Light','Fusion'}},
     [2280] = {en='Iainuki',skillchain={'Light','Fragmentation'},delay=7},
-    [2299] = {en='Bone Crusher',skillchain={'Fragmentation'}},
-    [2300] = {en='Armor Piercer',skillchain={'Gravitation'}},
-    [2301] = {en='Magic Mortar',skillchain={'Fusion'}},
+    [2299] = {en='Bone Crusher',skillchain={'Fragmentation'}},                                  --PUP: Valoredge, to do
+    [2300] = {en='Armor Piercer',skillchain={'Gravitation'},delay=5},                           --PUP: Sharpshot, testing
+    [2301] = {en='Magic Mortar',skillchain={'Fusion'}},                                         --PUP: Harlequin Stormwaker, to do
     [2386] = {en='Cobra Clamp',skillchain={'Fragmentation','Distortion'}},
     [2444] = {en='Dancer\'s Fury',skillchain={'Fragmentation','Scission'}},
     [2445] = {en='Whirling Edge',skillchain={'Distortion','Reverberation'}},
@@ -478,8 +483,8 @@ skills[11] = { -- NPC TP skills
     [2589] = {en='Iridal Pierce',skillchain={'Light','Fragmentation'}},
     [2590] = {en='Lunar Revolution',skillchain={'Gravitation','Reverberation'}},
     [2594] = {en='Quietus Sphere',skillchain={'Darkness','Gravitation'}},
-    [2743] = {en='String Shredder',skillchain={'Distortion','Scission'}},
-    [2744] = {en='Armor Shatterer',skillchain={'Fusion','Impaction'}},
+    [2743] = {en='String Shredder',skillchain={'Distortion','Scission'}},                       --PUP: Valoredge, to do
+    [2744] = {en='Armor Shatterer',skillchain={'Fusion','Impaction'},delay=4},                  --PUP: Sharpshot, accurate?
     [2891] = {en='Grapeshot',skillchain={'Reverberation','Transfixion'}},
     [2892] = {en='Pirate Pummel',skillchain={'Fusion','Impaction'}},
     [2893] = {en='Powder Keg',skillchain={'Fusion','Compression'}},
@@ -535,7 +540,7 @@ skills[11] = { -- NPC TP skills
     [3244] = {en='Sixth Element',skillchain={'Darkness','Gravitation'}},
     [3245] = {en='Shield Subverter',skillchain={'Light','Fusion'}},
     [3252] = {en='Bisection',skillchain={'Scission','Detonation'}},
-    [3253] = {en='Leaden Salute',skillchain={'Gravitation','Transfixion'}},
+    [3253] = {en='Leaden Salute',skillchain={'Gravitation','Transfixion'}, delay=6}, --trust: luzaf
     [3254] = {en='Akimbo Shot',skillchain={'Compression'},delay=5},
     [3255] = {en='Grisly Horizon',skillchain={'Darkness','Distortion'}},
     [3256] = {en='Hane Fubuki',skillchain={'Transfixion'}},
@@ -664,10 +669,10 @@ skills[11] = { -- NPC TP skills
     [3640] = {en='Super Crusher Jig',skillchain={'Gravitation','Reverberation'},delay=7},
     [3645] = {en='Inexorable Strike',skillchain={'Light','Fusion'}},
     [3647] = {en='Merciless Strike',skillchain={'Detonation','Impaction'}},
-    [3653] = {en='Tartaric Sigil',skillchain={'Compression','Scission'}},
-    [3654] = {en='Null Field',skillchain={'Fusion','Transfixion'}},
-    [3655] = {en='Alabaster Burst',skillchain={'Distortion','Detonation'}},
-    [3656] = {en='Noble Frenzy',skillchain={'Gravitation','Scission'}},
+    [3653] = {en='Tartaric Sigil',skillchain={'Compression','Scission'},delay=4},       --trust: august
+    [3654] = {en='Null Field',skillchain={'Fusion','Transfixion'},delay=6},             --trust: august
+    [3655] = {en='Alabaster Burst',skillchain={'Distortion','Detonation'},delay=4},     --trust: august
+    [3656] = {en='Noble Frenzy',skillchain={'Gravitation','Scission'}},                 --trust: august, not adjusted as he will not daybreak on macro test
     [3657] = {en='Fulminous Fury',skillchain={'Fragmentation','Scission'},delay=6},
     [3658] = {en='No Quarter',skillchain={'Light','Distortion'},delay=7},
     [3677] = {en='Camaraderie of the Crevasse',skillchain={'Detonation','Impaction'}},
@@ -680,16 +685,16 @@ skills[11] = { -- NPC TP skills
     [3687] = {en='Starward Yowl',skillchain={'Gravitation','Reverberation'}},
     [3688] = {en='Stalking Prey',skillchain={'Light','Fragmentation'}},
     [3691] = {en='Bludgeon',skillchain={'Fusion'}},
-    [3699] = {en='Expunge Magic',skillchain={'Distortion','Scission'}},
-    [3700] = {en='Harmonic Displacement',skillchain={'Fusion','Reverberation'}},
-    [3701] = {en='Sight Unseen',skillchain={'Fragmentation','Compression'}},
-    [3702] = {en='Darkest Hour',skillchain={'Gravitation','Liquefaction'}},
-    [3705] = {en='Naakual\'s Vengeance',skillchain={'Light','Fusion'},delay=7},
+    [3699] = {en='Expunge Magic',skillchain={'Distortion','Scission'}, delay=5},                --trust: Arciela II
+    [3700] = {en='Harmonic Displacement',skillchain={'Fusion','Reverberation'},delay=7},        --trust: Arciela II
+    [3701] = {en='Sight Unseen',skillchain={'Fragmentation','Compression'},delay=6},            --trust: Arciela II
+    [3702] = {en='Darkest Hour',skillchain={'Gravitation','Liquefaction'},delay=8},             --trust: Arciela II
+    [3705] = {en='Naakual\'s Vengeance',skillchain={'Light','Fusion'},delay=7},                 --trust: Arciela II
     [3707] = {en='Circle Blade',skillchain={'Reverberation','Impaction'}},
-    [3708] = {en='Swift Blade',skillchain={'Gravitation'}},
-    [3709] = {en='Chant du Cygne',skillchain={'Light','Distortion'}},
-    [3711] = {en='Vorpal Blade',skillchain={'Scission','Impaction'}},
-    [3713] = {en='Chant du Cygne',skillchain={'Light','Distortion'}},
+    [3708] = {en='Swift Blade',skillchain={'Gravitation'},delay=3},                 --trust: AAHM
+    [3709] = {en='Chant du Cygne',skillchain={'Light','Distortion'},delay=5},       --trust: AAHM
+    [3711] = {en='Vorpal Blade',skillchain={'Scission','Impaction'},delay=4},       --trust: AAEV
+    [3713] = {en='Chant du Cygne',skillchain={'Light','Distortion'},delay=5},       --trust: AAEV
     [3715] = {en='Rampage',skillchain={'Scission'}},
     [3716] = {en='Calamity',skillchain={'Scission','Impaction'}},
     [3718] = {en='Cloudsplitter',skillchain={'Darkness','Fragmentation'}},
@@ -705,10 +710,10 @@ skills[11] = { -- NPC TP skills
     [3735] = {en='Amatsu: Choun',skillchain={'Liquefaction'}},
     [3736] = {en='Amatsu: Gachirin',skillchain={'Light','Fragmentation'},delay=7},
     [3737] = {en='Amatsu: Suien',skillchain={'Fusion'},delay=6},
-    [3740] = {en='Final Exam',skillchain={'Light','Fusion'}},
-    [3741] = {en='Doctor\'s Orders',skillchain={'Darkness','Gravitation'}},
-    [3742] = {en='Empirical Research',skillchain={'Fragmentation','Transfixion'}},
-    [3743] = {en='Lesson in Pain',skillchain={'Distortion','Scission'}},
+    [3740] = {en='Final Exam',skillchain={'Light','Fusion'}, delay=7},                          --trust: Shantotto II
+    [3741] = {en='Doctor\'s Orders',skillchain={'Darkness','Gravitation'}, delay=6},            --trust: Shantotto II
+    [3742] = {en='Empirical Research',skillchain={'Fragmentation','Transfixion'}, delay=5},     --trust: Shantotto II
+    [3743] = {en='Lesson in Pain',skillchain={'Distortion','Scission'},delay=6},                --trust: Shantotto II
     [3840] = {en='Foot Kick',skillchain={'Reverberation'}},
     [3842] = {en='Whirl Claws',skillchain={'Impaction'}},
     [3843] = {en='Head Butt',skillchain={'Detonation'}},
@@ -753,6 +758,16 @@ skills[11] = { -- NPC TP skills
     [3938] = {en='Somersault',skillchain={'Compression'}},
     [3941] = {en='Pecking Flurry',skillchain={'Transfixion'}},
     [3942] = {en='Sickle Slash',skillchain={'Transfixion'}},
+        --these moves were added from ccoulton's branch to fix bst, but I don't play bst so cannot test
+    [3950] = {en='Disembowel',skillchain={'Impaction'}},
+    [3951] = {en='Extirpating Salvo',skillchain={'Fusion','Impaction'}},
+    [3953] = {en='Mega Scissors',skillchain={'Gravitation','Scission'}},
+    [3955] = {en='Rhinowrecker',skillchain={'Fusion','Transfixion'}},
+    [3956] = {en='Fluid Toss',skillchain={'Reverberation'}},
+    [3957] = {en='Fluid Spread',skillchain={'Fragmentation','Transfixion'}},
+    [3959] = {en='Crossthrash',skillchain={'Distortion','Detonation'}},
+    [3961] = {en='Hoof Volley',skillchain={'Light','Fragmentation'}},
+        --end added
     [4050] = {en='Wild Oats',skillchain={'Transfixion'}},
     [4124] = {en='Bomb Toss',skillchain={'Liquefaction'}},
     [4158] = {en='Blade: Metsu',skillchain={'Darkness','Fragmentation'}},
@@ -837,6 +852,16 @@ skills.playerPet = { -- BST/SMN Player Pet Skills
     [776] = {en='Pecking Flurry',skillchain={'Transfixion'}},
     [777] = {en='Sickle Slash',skillchain={'Transfixion'}},
     [780] = {en='Regal Gash',skillchain={'Distortion','Detonation'}},
+            --these moves were added from ccoulton's branch to fix bst, but I don't play bst so cannot test
+    [786] = {en='Disembowel',skillchain={'Impaction'}},
+    [787] = {en='Extirpating Salvo',skillchain={'Fusion','Impaction'}},
+    [789] = {en='Mega Scissors',skillchain={'Gravitation','Scission'}},
+    [791] = {en='Rhinowrecker',skillchain={'Fusion','Transfixion'}},
+    [792] = {en='Fluid Toss',skillchain={'Reverberation'}},
+    [793] = {en='Fluid Spread',skillchain={'Fragmentation','Transfixion'}},
+    [795] = {en='Crossthrash',skillchain={'Distortion','Detonation'}},
+    [797] = {en='Hoof Volley',skillchain={'Light','Fragmentation'}},
+            --end added
     [961] = {en='Welt',skillchain={'Scission'}},
     [964] = {en='Roundhouse',skillchain={'Detonation'}},
     [970] = {en='Hysteric Assault',skillchain={'Fragmentation','Transfixion'}},
@@ -920,6 +945,15 @@ skills[13] = { -- BST/SMN Pet Skills
     [776] = skills.playerPet[776], -- ASB: 1699 -- {en='Pecking Flurry',skillchain={'Transfixion'}},
     [777] = skills.playerPet[777], -- ASB:  810 -- {en='Sickle Slash',skillchain={'Transfixion'}},
     [780] = skills.playerPet[780], -- ASB: xxxx -- {en='Regal Gash',skillchain={'Distortion','Detonation'}},
+            --these moves were added from ccoulton's branch to fix bst, but I don't play bst so cannot test
+    [786] = skills.playerPet[786], -- ASB: xxxx -- {en='Disembowel',skillchain={'Impaction'}},
+    [787] = skills.playerPet[787], -- ASB: xxxx -- {en='Extirpating Salvo',skillchain={'Fusion','Impaction'}},
+    [789] = skills.playerPet[789], -- ASB: xxxx -- {en='Mega Scissors',skillchain={'Gravitation','Scission'}},
+    [791] = skills.playerPet[791], -- ASB: xxxx -- {en='Rhinowrecker',skillchain={'Fusion','Transfixion'}},
+    [792] = skills.playerPet[792], -- ASB: xxxx -- {en='Fluid Toss',skillchain={'Reverberation'}},
+    [793] = skills.playerPet[793], -- ASB: xxxx -- {en='Fluid Spread',skillchain={'Fragmentation','Transfixion'}},
+    [797] = skills.playerPet[797], -- ASB: xxxx -- {en='Hoof Volley',skillchain={'Light', 'Fragmentation'}},
+            --end added
     [961] = skills.playerPet[961], -- ASB: xxxx -- {en='Welt',skillchain={'Scission'}},
     [964] = skills.playerPet[964], -- ASB: xxxx -- {en='Roundhouse',skillchain={'Detonation'}},
     [970] = skills.playerPet[970], -- ASB: xxxx -- {en='Hysteric Assault',skillchain={'Fragmentation','Transfixion'}},
